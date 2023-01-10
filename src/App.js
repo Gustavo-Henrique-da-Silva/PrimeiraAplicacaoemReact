@@ -1,24 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
+import Item from "./components/item";
+import Card from "./components/card"; 
+//Lembrando que o elemento "class" das tags HTML aqui é chamado de ClassName
+//Não existe exatamente nenhum problema em utilizar só class, mas o React irá "chiar" muito 
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+  <>
+    <h1>Minha primeira aplicação com React</h1>
+    <ul>
+    <Item>
+      Item 1
+    </Item>
+    <Item>
+      Item 2
+    </Item>
+    <Item>
+      Item 3
+    </Item>
+    <Item>
+      Item 4
+    </Item>
+
+  
+    </ul>
+
+    <Card>
+
+    </Card>
+  </>
   );
 }
 
